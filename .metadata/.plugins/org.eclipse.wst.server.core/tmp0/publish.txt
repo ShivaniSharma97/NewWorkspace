@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Feb 13 14:37:08 IST 2019
+org.eclipse.jst.j2ee.server\:ShoppersChoiceBackend=WEB-INF/lib/ShoppersChoiceBackend-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\ABHAY\\.m2\\repository\\org\\springframework\\spring-web\\5.0.8.RELEASE\\spring-web-5.0.8.RELEASE.jar=WEB-INF/lib/spring-web-5.0.8.RELEASE.jar

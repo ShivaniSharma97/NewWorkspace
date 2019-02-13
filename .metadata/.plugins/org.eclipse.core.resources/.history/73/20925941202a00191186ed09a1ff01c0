@@ -1,0 +1,6 @@
+package com.sara.controller;
+
+@Controller
+public class PageController {
+
+}

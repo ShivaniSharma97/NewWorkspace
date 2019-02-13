@@ -1,0 +1,8 @@
+<%@ page language="java" contentType="text/html"%>
+<%@include file="Header.jsp" %>
+<html>
+<head></head>
+<title></title>
+<h2>Shoppers Choice the Online Shopping Site where you can select your choice</h2>
+
+</html>

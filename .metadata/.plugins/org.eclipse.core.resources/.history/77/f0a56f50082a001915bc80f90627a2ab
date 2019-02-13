@@ -1,0 +1,40 @@
+package com.niit.model;
+
+import javax.persistence.Entity;
+
+import javax.persistence.GeneratedValue;
+
+import javax.persistence.Id;
+
+import javax.persistence.Table;
+
+import javax.persistence.Transient;
+
+
+
+
+@Entity
+
+@Table
+
+public class Product 
+
+{
+
+	@Id
+
+	@GeneratedValue
+
+	
+
+	int productId;
+
+	String productName;
+
+	String productDesc;
+
+	int price;
+
+	int stock;
+
+	int categoryID;

@@ -1,0 +1,33 @@
+package com.niit.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.niit.dao.ProductDAO;
+import com.niit.model.Product;
+
+@Controller
+public class ProductController {
+
+
+@Autowired
+	ProductDAO productDAO;
+	
+	@RequestMapping("/category")
+public ModelAndView showCategory()
+		{
+		ModelAndView m = new ModelAndView();
+		List<Product> listCategories =productDAO.listProducts();
+		m.addObject("listCategories", listCategories);
+		m.setViewName("Category");
+		return m;
+		
+		}
+	
+	
+
+}

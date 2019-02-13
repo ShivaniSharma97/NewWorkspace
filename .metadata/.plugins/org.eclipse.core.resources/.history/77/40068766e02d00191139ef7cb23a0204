@@ -1,0 +1,67 @@
+<%@ page language="java" contentType="text/html"%>
+<%@include file="Header.jsp" %>
+<html>
+<body>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container-fluid">
+		<div class="container">
+			<div class="formBox">
+				<form>
+						<div class="row">
+							<div class="col-sm-12">
+								<h1>Contact form</h1>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="inputBox ">
+									<div class="inputText">First Name</div>
+									<input type="text" name="" class="input">
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="inputBox">
+									<div class="inputText">Last Name</div>
+									<input type="text" name="" class="input">
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="inputBox">
+									<div class="inputText">Email</div>
+<input type="text" name="" class="input">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="inputBox">
+<div class="inputText">Mobile</div>
+<input type="text" name="" class="input">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="inputBox">
+<div class="inputText">Email</div>
+<textarea class="input"></textarea>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<input type="submit" name="" class="button" value="Send Message">
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</html>
