@@ -25,6 +25,7 @@ public ModelAndView showCategory()
 		{
 		ModelAndView m = new ModelAndView();
 		List<Category> listCategories =categoryDAO.listCategories();
+	
 		m.addObject("listCategories", listCategories);
 		m.setViewName("Category");
 		return m;
@@ -45,44 +46,82 @@ public String addCategory(Model m, @RequestParam("catName")String CategoryName,@
 	m.addAttribute("pageinfo", "Manage Category ");
 return "Category";
 		}
-
 @PostMapping(value="/UpdateCategory")
+
 public String UpdateCategory(Model m, @RequestParam("catId")int CategoryID,  @RequestParam("catName")String CategoryName,@RequestParam("catDesc")String CategoryDesc)
+
 		{
+
 	Category category=categoryDAO.getCategory(CategoryID);
+
 	category.setCategoryName(CategoryName);
+
 	category.setCategoryDesc(CategoryDesc);
+
 	categoryDAO.updateCategory(category);
+
 	
+
 	List<Category>listCategories=categoryDAO.listCategories();
+
 	m.addAttribute("listCategories", listCategories);
+
 	
+
 	
+
 	m.addAttribute("pageinfo", "Manage Category ");
+
 return "Category";
+
 	 	}
 
 
+
+
+
 @RequestMapping(value="/deleteCategory/{categoryID}")
+
 public String deleteCategory(Model m, @PathVariable("categoryID")int categoryID)
+
 {
+
 	Category category=categoryDAO.getCategory(categoryID);
+
 	categoryDAO.deleteCategory(category);
+
 	
+
 	List<Category>listCategories=categoryDAO.listCategories();
+
 	m.addAttribute("listCategories", listCategories);
+
 	
+
 	m.addAttribute("pageinfo", "Manage Category");
+
 	return "Category";
-}
-@RequestMapping(value="/editCategory/{categoryID}")
-public String editCategory(Model m, @PathVariable("categoryID")int categoryID)
-{
-	Category category=categoryDAO.getCategory(categoryID);
-	m.addAttribute("category", category);
-	
-	m.addAttribute("pageinfo", "Manage Category");
-	return "UpdateCategory";
 
 }
+
+@RequestMapping(value="/editCategory/{categoryID}")
+
+public String editCategory(Model m, @PathVariable("categoryID")int categoryID)
+
+{
+
+	Category category=categoryDAO.getCategory(categoryID);
+
+	m.addAttribute("category", category);
+
+	
+
+	m.addAttribute("pageinfo", "Manage Category");
+
+	return "UpdateCategory";
+
+
+
+}
+
 }

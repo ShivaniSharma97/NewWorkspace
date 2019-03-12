@@ -33,7 +33,7 @@
   <tr>
     <td> Category </td>
     <td> 
-        <form:select path="categoryID">
+        <form:select path="categoryId">
            <form:option value="0" label="--Select List--" />
            <form:options items="${categoryList}" />
         </form:select>
@@ -41,6 +41,10 @@
     </td>
   </tr>
   
+  <tr>
+     <td> Supplier </td>
+     <td> <form:input path="supplierId" /> </td>
+  </tr>
   
   <tr>
      <td> Product Description </td>

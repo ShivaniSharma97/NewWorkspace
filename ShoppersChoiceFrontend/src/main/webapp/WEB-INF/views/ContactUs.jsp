@@ -1,68 +1,77 @@
 <%@ page language="java" contentType="text/html"%>
-<%@include file="Header.jsp" %>
+
 <html>
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
-<h2> You can Contact us On our web site, E-mail,or you can call us on this number:- 0120 69784630</h2>
-<div class="container-fluid">
-<div class="container">
-<div class="formBox">
-<form>
-<div class="row">
-<div class="col-sm-12">
-<h1>Contact form</h1>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-6">
-<div class="inputBox ">
-<div class="inputText">First Name</div>
-<input type="text" name="" class="input">
-</div>
-</div>
-<div class="col-sm-6">
-<div class="inputBox">
-<div class="inputText">Last Name</div>
-<input type="text" name="" class="input">
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-6">
-<div class="inputBox">
-<div class="inputText">Email</div>
-<input type="text" name="" class="input">
-</div>
-</div>
-<div class="col-sm-6">
-<div class="inputBox">
-<div class="inputText">Mobile</div>
-<input type="text" name="" class="input">
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12">
-<div class="inputBox">
-<div class="inputText">Email</div>
-<textarea class="input"></textarea>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12">
-<input type="submit" name="" class="button" value="Send Message">
-</div>
-</div>
+<section class="Material-contact-section section-padding section-dark">
+      <div class="container">
+          <div class="row">
+              <!-- Section Titile -->
+              <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                  <h1 class="section-title">Love to Hear From You</h1>
+              </div>
+          </div>
+          <div class="row">
+              <!-- Section Titile -->
+              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content.</p>
 
-<div class="input text"> Feedback</div>
-<textarea class="input" align="right"></textarea>
-</form>
-</div>
-</div>
-</div>
+                
+                <div class="find-widget">
+                 Address: <a href="#">Chiranjeev Vihar,Ghaziabad</a>
+                </div>
+                <div class="find-widget">
+                  Phone:  <a href="#">+8010537055</a>
+                </div>
+                
+                <div class="find-widget">
+                  Website:  <a href="https://uny.ro">www.ShoppersChoice.com</a>
+                </div>
+                
+              </div>
+              <!-- contact form -->
+              <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <!-- Name -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- email -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Subject -->
+                      <div class="form-group label-floating">
+                        <label class="control-label">Subject</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Message -->
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label">Message</label>
+                          <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Form Submit -->
+                      <div class="form-submit mt-5">
+                          <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
+
+</body>
 </html>

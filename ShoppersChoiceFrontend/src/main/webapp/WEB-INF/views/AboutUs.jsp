@@ -1,11 +1,12 @@
-<%@ page language="java" contentType="text/html"%>
-<%@include file="Header.jsp" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Shoppers Choice</title>
+</head>
 <body>
-<h1><marquee>Welcome to my page</marquee></h1>
-
-<h2>Shoppers Choice the Online Shopping Site where you can select your choice</h2>
+WELCOME
 </body>
 </html>

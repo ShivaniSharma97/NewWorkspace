@@ -44,6 +44,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\NewWorkspace\ShoppersChoiceFrontend"/>
 			<item value="E:\NewWorkspace\ShoppersChoiceFrontend\src\main\webapp\WEB-INF\views\Login.jsp"/>
 			<item value="E:\NewWorkspace\ShoppersChoiceFrontend\src\main\webapp\index.jsp"/>
 			<item value="E:\NewWorkspace\ShoppersChoiceBackend"/>

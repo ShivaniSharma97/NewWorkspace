@@ -1,6 +1,0 @@
-127.0.0.1 - - [10/Feb/2019:15:31:12 +0530] "GET / HTTP/1.1" 404 994
-0:0:0:0:0:0:0:1 - - [10/Feb/2019:15:31:14 +0530] "GET /ShoppersChoiceFrontend/ HTTP/1.1" 200 1098
-0:0:0:0:0:0:0:1 - - [10/Feb/2019:15:31:22 +0530] "GET /ShoppersChoiceFrontend/Home HTTP/1.1" 404 992
-0:0:0:0:0:0:0:1 - - [10/Feb/2019:15:31:33 +0530] "GET /ShoppersChoiceFrontend HTTP/1.1" 302 -
-0:0:0:0:0:0:0:1 - - [10/Feb/2019:15:31:33 +0530] "GET /ShoppersChoiceFrontend/ HTTP/1.1" 200 1098
-0:0:0:0:0:0:0:1 - - [10/Feb/2019:15:31:51 +0530] "GET /ShoppersChoiceFrontend/Login HTTP/1.1" 404 992

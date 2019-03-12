@@ -44,10 +44,7 @@
      <td> <form:input path="productDesc" /> </td>
   </tr>
   
-  <tr>
-     <td> Image </td>
-     <td> <form:input type="file" path="pimage" /> </td>
-  </tr>
+  
   
   <tr>
      <td colspan="2"> <center><input type="submit" value="InsertProduct" /> </center> </td>
@@ -62,7 +59,7 @@
       <td> Product Name &nbsp</td>
       <td> Price &nbsp</td>
       <td> Stock &nbsp</td>
-      
+      <td> Supplier &nbsp</td>
       <td> Operations </td>
     </tr>
     
@@ -72,7 +69,6 @@
        <td> <center>  ${product.productName} </center> </td>
        <td>  <center> ${product.price} </center> </td>
        <td>  <center> ${product.stock} </center> </td>
-      
        
        <td> <a href="<c:url value='/editProduct/${product.productId}'/>" class="btn btn-success"> EDIT </a> /
        <td> <a href="<c:url value='/deleteProduct/${product.productId}'/>" class="btn btn-danger"> DELETE </a> </td>

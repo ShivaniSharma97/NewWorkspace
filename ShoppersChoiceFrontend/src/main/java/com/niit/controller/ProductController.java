@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -20,10 +21,12 @@ import com.niit.dao.CategoryDAO;
 import com.niit.dao.ProductDAO;
 import com.niit.model.Category;
 import com.niit.model.Product;
-@Controller
-public class ProductController {
 
-	
+
+
+@Controller
+public class ProductController 
+{
 	@Autowired
 	CategoryDAO categoryDAO;
 	
@@ -55,8 +58,8 @@ public class ProductController {
 		m.addAttribute("pageinfo" , "Manage Product");
 		m.addAttribute("categoryList", this.getCategories());
 		
-		String imagepath="E:\\NewWorkspace\\ShoppersChoiceFrontend\\src\\main\\resources";
-		imagepath=imagepath+String.valueOf(product.getProductId())+".jfif";
+		String imagepath="E:\\NewWorkSpace\\GemsGalleriaFrontend\\src\\main\\resources\\images";
+		imagepath=imagepath+String.valueOf(product.getProductId())+".png";
 		
 		File image=new File(imagepath);
 		
@@ -78,7 +81,7 @@ public class ProductController {
 		else
 		{
 			
-			m.addAttribute("errorInfo","Problem occured during Uploading:");
+	    	m.addAttribute("errorInfo","Problem occured during Uploading:");
 		}
 	
 		
@@ -175,4 +178,5 @@ public class ProductController {
 	
 	
 }
+	
 }

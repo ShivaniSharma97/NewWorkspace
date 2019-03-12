@@ -1,0 +1,6 @@
+127.0.0.1 - - [11/Mar/2019:20:11:01 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [11/Mar/2019:20:11:02 +0530] "GET /ShoppersChoiceFrontend/ HTTP/1.1" 404 1040
+0:0:0:0:0:0:0:1 - - [11/Mar/2019:20:12:11 +0530] "GET /ShoppersChoiceFrontend/ HTTP/1.1" 404 1040
+0:0:0:0:0:0:0:1 - - [11/Mar/2019:20:12:32 +0530] "GET /ShoppersChoiceFrontend/ HTTP/1.1" 404 1040
+0:0:0:0:0:0:0:1 - - [11/Mar/2019:20:13:46 +0530] "GET /ShoppersChoiceFrontend/ HTTP/1.1" 404 1040
+0:0:0:0:0:0:0:1 - - [11/Mar/2019:20:21:27 +0530] "GET /ShoppersChoiceFrontend/ HTTP/1.1" 404 1040

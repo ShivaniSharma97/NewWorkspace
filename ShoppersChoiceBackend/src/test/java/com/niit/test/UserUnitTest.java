@@ -30,14 +30,14 @@ public class UserUnitTest {
 	{
 		UserDetail user=new UserDetail();
 		
-		user.setUsername("shivani");
+		user.setUsername("shivanisharma");
 		user.setPassword("pass123");
 		user.setEnabled(true);
-		user.setRole("ROLE_USER");
+		user.setRole("ROLE_ADMIN");
 		user.setCustomerName("Shivani Sharma");
 		user.setCustomerAddr("Ghaziabad");
 		
-	//	assertTrue("Problem in adding User:",userDAO.registerUser(user));
+//	 assertTrue("Problem in adding User:",userDAO.registerUser(user));
 	}
 }
 
